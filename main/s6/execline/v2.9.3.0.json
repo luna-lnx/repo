@@ -1,0 +1,16 @@
+{
+    "git": "https://github.com/skarnet/execline -b v2.9.3.0",
+    "build": [
+        "./configure --prefix=/usr/",
+        "make"
+    ],
+    "install": [
+        "make install"
+    ],
+    "uninstall": [
+        "rm -f /bin/background /bin/backtick /bin/case /bin/define /bin/dollarat /bin/elgetopt /bin/elgetpositionals /bin/elglob /bin/eltest /bin/emptyenv /bin/envfile /bin/exec /bin/execline-cd /bin/execline-umask /bin/execlineb /bin/exit /bin/export /bin/fdblock /bin/fdclose /bin/fdmove /bin/fdreserve /bin/fdswap /bin/forbacktickx /bin/foreground /bin/forstdin /bin/forx /bin/getcwd /bin/getpid /bin/heredoc /bin/homeof /bin/if /bin/ifelse /bin/ifte /bin/ifthenelse /bin/importas /bin/loopwhilex /bin/multidefine /bin/multisubstitute /bin/pipeline /bin/piperw /bin/posix-cd /bin/posix-umask /bin/redirfd /bin/runblock /bin/shift /bin/trap /bin/tryexec /bin/unexport /bin/wait /bin/withstdinas"
+    ],
+    "depends": [
+        "skalibs>=v2.13.1.1"
+    ]
+}

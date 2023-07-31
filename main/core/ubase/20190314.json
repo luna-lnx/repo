@@ -1,0 +1,13 @@
+{
+    "git": "https://git.suckless.org/ubase",
+    "build": [
+        "make"
+    ],
+    "install": [
+        "make install"
+    ],
+    "uninstall": [
+        "make uninstall"
+    ],
+    "uninstallWarn": true
+}

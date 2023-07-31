@@ -1,0 +1,37 @@
+{
+    "prefix": "https://raw.githubusercontent.com/luna-sl/luna/master/repo/main/",
+    "constellations": {
+        "core": {
+            "sbase": {
+                "latest": "20230412",
+                "old": []
+            },
+            "ubase": {
+                "latest": "20190314",
+                "old": []
+            }
+        },
+        "s6": {
+            "skalibs": {
+                "latest": "v2.3.1.1",
+                "old": []
+            },
+            "execline": {
+                "latest": "v2.9.3.0",
+                "old": []
+            },
+            "s6": {
+                "latest": "v2.11.3.2",
+                "old": []
+            },
+            "s6-linux-init": {
+                "latest": "v1.1.1.1",
+                "old": []
+            },
+            "s6-rc": {
+                "latest": "v0.5.4.1",
+                "old": []
+            }
+        }
+    }
+}

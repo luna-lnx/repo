@@ -1,0 +1,21 @@
+{
+    "git": "https://github.com/skarnet/s6-rc -b v0.5.4.1",
+    "build": [
+        "./configure",
+        "make"
+    ],
+    "install": [
+        "make install"
+    ],
+    "uninstall": [
+        "rm -f /usr/lib/s6-rc/libs6rc.a",
+        "rm -f/usr/include/s6-rc/s6rc-constants.h /usr/include/s6-rc/s6rc-db.h /usr/include/s6-rc/s6rc-servicedir.h /usr/include/s6-rc/s6rc.h /usr/include/s6-rc/config.h /usr/include/s6-rc/s6rc-utils.h",
+        "rm -f/libexec/s6-rc-fdholder-filler /libexec/s6-rc-oneshot-run",
+        "rm -f/bin/s6-rc-update /bin/s6-rc-init /bin/s6-rc-compile /bin/s6-rc /bin/s6-rc-bundle /bin/s6-rc-db /bin/s6-rc-dryrun /bin/s6-rc-format-upgrade"
+    ],
+    "depends": [
+        "skalibs>=v2.13.1.1",
+        "execline>=v2.9.3.0",
+        "s6>=v2.11.3.2"
+    ]
+}
