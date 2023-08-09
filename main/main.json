@@ -2,14 +2,6 @@
     "prefix": "https://raw.githubusercontent.com/luna-sl/luna/master/repo/main/",
     "constellations": {
         "core": {
-            "sbase": {
-                "latest": "20230412",
-                "old": []
-            },
-            "ubase": {
-                "latest": "20190314",
-                "old": []
-            }
         },
         "s6": {
             "skalibs": {
