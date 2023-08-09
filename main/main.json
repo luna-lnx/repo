@@ -2,6 +2,10 @@
     "prefix": "https://raw.githubusercontent.com/luna-sl/luna/master/repo/main/",
     "constellations": {
         "core": {
+            "musl":{
+                "latest": "v1.2.4",
+                "old": []
+            }
         },
         "s6": {
             "skalibs": {
