@@ -18,7 +18,7 @@ export NAME="yash"
 export DESC="POSIX-compliant command line shell written in C99"
 
 # Commands to build
-export BUILD="./configure && make"
+export BUILD=./configure && make
 
 # Commands to install
-export INSTALL="make install"
+export INSTALL=make install

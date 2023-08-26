@@ -18,7 +18,7 @@ export NAME="musl"
 export DESC="an implementation of the standard library for Linux-based systems"
 
 # Commands to build
-export BUILD="./configure && make"
+export BUILD=./configure && make
 
 # Commands to install
-export INSTALL="make install"
+export INSTALL=make install
