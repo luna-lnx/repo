@@ -4,7 +4,7 @@
 export DEPENDS="make, clang"
 
 # Git repo
-export REPO="https://git.musl-libc.org/cgit/musl"
+export REPO="https://git.musl-libc.org/git/musl"
 
 # Git tag/branch
 export TAG="v1.2.4"
