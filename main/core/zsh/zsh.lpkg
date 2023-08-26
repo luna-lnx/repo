@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# Dependencies
+export DEPENDS="make, clang"
+
+# Git repo
+export REPO="https://github.com/zsh-users/zsh"
+
+# Git tag/branch
+export TAG="zsh-5.9"
+
+# Package name
+# !THIS SHOULD NEVER CHANGE!
+# !MUST BE THE SAME AS THE FILENAME!
+export NAME="zsh"
+
+# Package description
+export DESC="zsh is a shell designed for interactive use"
+
+# Commands to build
+export BUILD="./configure && make"
+
+# Commands to install
+export INSTALL="make install"

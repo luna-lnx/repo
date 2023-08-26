@@ -3,7 +3,8 @@
     "constellations": {
         "core": [
             "musl",
-            "yash"
+            "yash",
+            "zsh"
         ]
     }
 }
