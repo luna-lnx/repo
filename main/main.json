@@ -1,33 +1,8 @@
 {
-    "prefix": "https://raw.githubusercontent.com/luna-sl/luna/master/repo/main/",
+    "prefix": "https://raw.githubusercontent.com/luna-lnx/repo/main/main/",
     "constellations": {
-        "core": {
-            "musl":{
-                "latest": "v1.2.4",
-                "old": []
-            }
-        },
-        "s6": {
-            "skalibs": {
-                "latest": "v2.3.1.1",
-                "old": []
-            },
-            "execline": {
-                "latest": "v2.9.3.0",
-                "old": []
-            },
-            "s6": {
-                "latest": "v2.11.3.2",
-                "old": []
-            },
-            "s6-linux-init": {
-                "latest": "v1.1.1.1",
-                "old": []
-            },
-            "s6-rc": {
-                "latest": "v0.5.4.1",
-                "old": []
-            }
-        }
+        "core": [
+            "musl"
+        ]
     }
 }
