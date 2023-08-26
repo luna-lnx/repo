@@ -2,7 +2,8 @@
     "prefix": "https://raw.githubusercontent.com/luna-lnx/repo/main/main/",
     "constellations": {
         "core": [
-            "musl"
+            "musl",
+            "yash"
         ]
     }
 }

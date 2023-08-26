@@ -4,21 +4,21 @@
 export DEPENDS="make, clang"
 
 # Git repo
-export REPO="https://git.musl-libc.org/git/musl"
+export REPO="https://scm.osdn.net/gitroot/yash/yash.git"
 
 # Git tag/branch
-export TAG="v1.2.4"
+export TAG="2.55"
 
 # Package name
 # !THIS SHOULD NEVER CHANGE!
 # !MUST BE THE SAME AS THE FILENAME!
-export NAME="musl"
+export NAME="yash"
 
 # Package description
-export DESC="an implementation of the standard library for Linux-based systems"
+export DESC="POSIX-compliant command line shell written in C99"
 
 # Commands to build
-export BUILD="./configure; make"
+export BUILD="make"
 
 # Commands to install
 export INSTALL="make install"
