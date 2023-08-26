@@ -18,7 +18,7 @@ export NAME="zsh"
 export DESC="zsh is a shell designed for interactive use"
 
 # Commands to build
-export BUILD="./configure && make"
+export BUILD="./configure; make"
 
 # Commands to install
 export INSTALL="make install"
