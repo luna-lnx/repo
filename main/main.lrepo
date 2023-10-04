@@ -2,9 +2,9 @@
 
 prefix = "https://raw.githubusercontent.com/luna-lnx/repo/main/main/"
 
-constellations = [
+constellations = {
     "core" = [
         "musl=v1.2.4",
         "yash=2.55"
     ]
-]
+}
