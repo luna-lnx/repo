@@ -2,8 +2,8 @@
 
 name = "musl"
 description = "musl libc. nothing else to add."
-tag = "v1.2.4"
-tarball = "https://git.musl-libc.org/cgit/musl/snapshot/musl-1.2.4.tar.gz"
+tag = "1.2.4"
+tarball = "https://git.musl-libc.org/cgit/musl/snapshot/musl-%s.tar.gz"
 # TODO: add other formats
 dependencies = [
     "make"
