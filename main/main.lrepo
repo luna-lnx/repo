@@ -4,4 +4,5 @@ prefix = "https://raw.githubusercontent.com/luna-lnx/repo/main/main/"
 
 #ill fix this soon
 
-constellations = {"core" = ["musl=v1.2.4", "yash=2.55"]}
+[constellations]
+"core" = ["musl=v1.2.4", "yash=2.55"]
