@@ -9,7 +9,7 @@ dependencies = [
     "make"
 ]
 build = [
-    "./configure",
+    "$SHELL -c ./configure",
     "make"
 ]
 install = [
