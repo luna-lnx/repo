@@ -14,7 +14,7 @@ build = [
     "make"
 ]
 install = [
-    "make install"
+    "make install DESTDIR=%s"
 ]
 uninstall = [
     "make uninstall"
