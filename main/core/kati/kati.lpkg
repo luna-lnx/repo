@@ -9,5 +9,6 @@ build = [
     "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS make $MKFLAGS"
 ]
 install = [
-    "cp ./ckati $DESTDIR/usr/bin/"
+    "mkdir $DEST/usr/bin -p",
+    "cp ./ckati $DEST/usr/bin/"
 ]
