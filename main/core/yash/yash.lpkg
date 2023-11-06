@@ -11,7 +11,7 @@ dependencies = [
 build = [
     "chmod +x ./configure",
     "./configure",
-    "make"
+    "make $MKFLAGS"
 ]
 install = [
     "make install DESTDIR=$DEST"
