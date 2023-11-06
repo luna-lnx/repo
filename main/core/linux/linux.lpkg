@@ -1,0 +1,16 @@
+name = "linux"
+description = "the good ol' linux kernel (my beloved)"
+tag = "v6.6"
+tarball = "https://github.com/torvalds/linux/archive/refs/tags/%s.tar.gz"
+dependencies = [
+    "make"
+]
+build = [
+    "make defconfig",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS make $MKFLAGS"
+]
+install = [
+    "mkdir $DEST/boot",
+    "cp ./arch/x86_64/boot/bzImage $DEST/boot/vmlinuz",
+    "make modules_install INSTALL_MOD_PATH=$DEST"
+]
