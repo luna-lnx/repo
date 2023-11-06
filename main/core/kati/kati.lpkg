@@ -3,7 +3,6 @@ description = "kati buildsystem (drop-in replacement for make)"
 tag = "master"
 tarball = "https://github.com/google/kati/archive/refs/heads/%s.tar.gz"
 dependencies = [
-    "make"
 ]
 build = [
     "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS make $MKFLAGS"

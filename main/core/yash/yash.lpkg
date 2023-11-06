@@ -3,7 +3,7 @@ description = "yash shell"
 tag = "2.55"
 tarball = "https://github.com/magicant/yash/archive/refs/tags/%s.tar.gz"
 dependencies = [
-    "make"
+    "kati"
 ]
 build = [
     "chmod +x ./configure",
