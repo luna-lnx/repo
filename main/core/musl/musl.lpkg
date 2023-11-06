@@ -11,5 +11,6 @@ build = [
     "make $MKFLAGS"
 ]
 install = [
+    "chmod +x ./tools/install.sh",
     "make install DESTDIR=$DEST"
 ]
