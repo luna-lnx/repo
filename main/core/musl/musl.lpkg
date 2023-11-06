@@ -1,21 +1,15 @@
-# this package is an example. don't actually use it, TOML format
-
 name = "musl"
-description = "musl libc. nothing else to add."
+description = "musl libc"
 tag = "1.2.4"
 tarball = "https://git.musl-libc.org/cgit/musl/snapshot/musl-%s.tar.gz"
-# TODO: add other formats
 dependencies = [
     "make"
 ]
 build = [
     "chmod +x ./configure",
-    "./configure",
-    "make"
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./configure",
+    "make $MKFLAGS"
 ]
 install = [
-    "make install"
-]
-uninstall = [
-    "make uninstall"
+    "make install DESTDIR=$DEST"
 ]

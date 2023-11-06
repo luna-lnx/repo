@@ -1,21 +1,15 @@
-# this package is an example. don't actually use it, TOML format
-
 name = "yash"
 description = "yash shell"
 tag = "2.55"
 tarball = "https://github.com/magicant/yash/archive/refs/tags/%s.tar.gz"
-# TODO: add other formats
 dependencies = [
     "make"
 ]
 build = [
     "chmod +x ./configure",
-    "./configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./configure",
     "make $MKFLAGS"
 ]
 install = [
     "make install DESTDIR=$DEST"
-]
-uninstall = [
-    "make uninstall"
 ]
