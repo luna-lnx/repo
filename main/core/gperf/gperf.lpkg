@@ -13,6 +13,5 @@ build = [
     "make $MKFLAGS"
 ]
 install = [
-    "mkdir $DEST/usr/local/share/doc/",
     "make install DESTDIR=$DEST"
 ]
