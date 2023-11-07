@@ -4,11 +4,13 @@ description = "autoconf"
 tag = "latest"
 tarball = "https://ftp.gnu.org/gnu/autoconf/autoconf-%s.tar.gz"
 dependencies = [
-    "kati"
+    "kati",
+    "perl",
+    "m4"
 ]
 build = [
     "chmod +x ./configure",
-    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS='$CFLAGS -std=c++14' LDFLAGS=$LDFLAGS ./configure --disable-doc",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS='$CFLAGS -std=c++14' LDFLAGS=$LDFLAGS ./configure",
     "make $MKFLAGS"
 ]
 install = [
