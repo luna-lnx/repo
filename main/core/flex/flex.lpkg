@@ -1,0 +1,15 @@
+name = "flex"
+description = "flex"
+tag = "v2.6.4"
+tarball = "https://github.com/westes/flex/archive/refs/tags/%s.tar.gz"
+dependencies = [
+    "kati"
+]
+build = [
+    "chmod +x ./configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./configure",
+    "make $MKFLAGS"
+]
+install = [
+    "make install DESTDIR=$DEST"
+]

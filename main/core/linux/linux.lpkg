@@ -2,10 +2,15 @@ name = "linux"
 description = "the good ol' linux kernel (my beloved)"
 tag = "v6.6"
 tarball = "https://github.com/torvalds/linux/archive/refs/tags/%s.tar.gz"
+# why does linux have to be so bloated :(
 dependencies = [
     "kati",
     "flex",
-    "bison"
+    "bison",
+    "openssl",
+    "perl",
+    "pkgconf",
+    "binutils"
 ]
 build = [
     "make defconfig",

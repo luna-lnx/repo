@@ -1,0 +1,16 @@
+name = "perl"
+description = "perl"
+tag = "v5.39.4"
+tarball = "https://github.com/Perl/perl5/archive/refs/tags/%s.tar.gz"
+dependencies = [
+    "kati",
+    "perl"
+]
+build = [
+    "chmod +x ./Configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./Configure",
+    "make $MKFLAGS"
+]
+install = [
+    "make install DESTDIR=$DEST"
+]

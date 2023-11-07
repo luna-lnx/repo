@@ -1,0 +1,16 @@
+name = "openssl"
+description = "openssl"
+tag = "3.1.4"
+tarball = "https://github.com/openssl/openssl/archive/refs/tags/openssl-%s.tar.gz"
+dependencies = [
+    "kati",
+    "perl"
+]
+build = [
+    "chmod +x ./Configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./Configure",
+    "make $MKFLAGS"
+]
+install = [
+    "make install DESTDIR=$DEST"
+]

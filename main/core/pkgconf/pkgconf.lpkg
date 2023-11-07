@@ -1,0 +1,15 @@
+name = "pkgconf"
+description = "pkgconf"
+tag = "2.0.3"
+tarball = "https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-%s.tar.gz"
+dependencies = [
+    "kati"
+]
+build = [
+    "chmod +x ./configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./configure",
+    "make $MKFLAGS"
+]
+install = [
+    "make install DESTDIR=$DEST"
+]

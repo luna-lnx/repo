@@ -1,0 +1,17 @@
+#https://github.com/akimd/bison/archive/refs/tags/v3.8.2.tar.gz
+name = "bison"
+description = "bison"
+tag = "3.8.2"
+tarball = "https://ftp.gnu.org/gnu/bison/bison-%s.tar.gz"
+dependencies = [
+    "kati",
+    "m4"
+]
+build = [
+    "chmod +x ./configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./configure",
+    "make $MKFLAGS"
+]
+install = [
+    "make install DESTDIR=$DEST"
+]
