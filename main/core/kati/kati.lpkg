@@ -5,7 +5,7 @@ tarball = "https://github.com/google/kati/archive/refs/heads/%s.tar.gz"
 dependencies = [
 ]
 build = [
-    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS make $MKFLAGS"
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS=$CFLAGS LDFLAGS=$LDFLAGS make $MKFLAGS"
 ]
 install = [
     "mkdir $DEST/usr/bin -p",

@@ -14,7 +14,7 @@ dependencies = [
 ]
 build = [
     "make defconfig",
-    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS make $MKFLAGS"
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS=$CFLAGS LDFLAGS=$LDFLAGS make $MKFLAGS"
 ]
 install = [
     "mkdir $DEST/boot",

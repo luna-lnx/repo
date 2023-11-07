@@ -9,7 +9,7 @@ dependencies = [
 ]
 build = [
     "./autogen.sh",
-    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./configure",
     "make $MKFLAGS"
 ]
 install = [
