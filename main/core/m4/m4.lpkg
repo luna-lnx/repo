@@ -1,0 +1,16 @@
+#https://github.com/akimd/bison/archive/refs/tags/v3.8.2.tar.gz
+name = "m4"
+description = "m4"
+tag = "1.4.19"
+tarball = "https://git.savannah.gnu.org/cgit/m4.git/snapshot/m4-%s.tar.gz"
+dependencies = [
+    "kati"
+]
+build = [
+    "chmod +x ./configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./configure",
+    "make $MKFLAGS"
+]
+install = [
+    "make install DESTDIR=$DEST"
+]
