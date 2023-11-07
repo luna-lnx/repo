@@ -3,8 +3,7 @@ description = "perl"
 tag = "v5.39.4"
 tarball = "https://github.com/Perl/perl5/archive/refs/tags/%s.tar.gz"
 dependencies = [
-    "kati",
-    "perl"
+    "kati"
 ]
 build = [
     "chmod +x ./Configure",
