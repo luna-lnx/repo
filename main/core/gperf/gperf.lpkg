@@ -9,7 +9,7 @@ dependencies = [
 build = [
     "aclocal",
     "chmod +x ./configure",
-    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS="$CFLAGS -std=c++14" LDFLAGS=$LDFLAGS ./configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS=\"$CFLAGS -std=c++14\" LDFLAGS=$LDFLAGS ./configure",
     "make $MKFLAGS"
 ]
 install = [
