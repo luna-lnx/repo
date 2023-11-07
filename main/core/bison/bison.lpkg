@@ -6,7 +6,8 @@ tarball = "https://ftp.gnu.org/gnu/bison/bison-%s.tar.gz"
 dependencies = [
     "kati",
     "m4",
-    "gperf"
+    "gperf",
+    "autoconf"
 ]
 build = [
     "aclocal",

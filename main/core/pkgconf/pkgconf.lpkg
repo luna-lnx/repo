@@ -5,7 +5,7 @@ tarball = "https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-%s.tar.g
 dependencies = [
     "kati",
     "m4",
-    "autotools"
+    "autoconf"
 ]
 build = [
     "./autogen.sh",

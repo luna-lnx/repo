@@ -4,7 +4,8 @@ description = "gperf"
 tag = "3.1"
 tarball = "https://ftp.gnu.org/pub/gnu/gperf/gperf-%s.tar.gz"
 dependencies = [
-    "kati"
+    "kati",
+    "autoconf"
 ]
 build = [
     "aclocal",
