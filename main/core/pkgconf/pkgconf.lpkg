@@ -3,7 +3,9 @@ description = "pkgconf"
 tag = "2.0.3"
 tarball = "https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-%s.tar.gz"
 dependencies = [
-    "kati"
+    "kati",
+    "m4",
+    "autotools"
 ]
 build = [
     "chmod +x ./configure",
