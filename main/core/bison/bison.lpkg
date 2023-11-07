@@ -8,6 +8,7 @@ dependencies = [
     "m4"
 ]
 build = [
+    "aclocal",
     "chmod +x ./configure",
     "CC=$CC CXX=$CXX CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./configure",
     "make $MKFLAGS"
