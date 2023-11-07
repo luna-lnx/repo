@@ -1,0 +1,16 @@
+#https://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz
+name = "autoconf"
+description = "autoconf"
+tag = "latest"
+tarball = "https://ftp.gnu.org/gnu/autoconf/autoconf-%s.tar.gz"
+dependencies = [
+    "kati"
+]
+build = [
+    "chmod +x ./configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS='$CFLAGS -std=c++14' LDFLAGS=$LDFLAGS ./configure --disable-doc",
+    "make $MKFLAGS"
+]
+install = [
+    "make install DESTDIR=$DEST"
+]

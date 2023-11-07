@@ -6,4 +6,4 @@ prefix = "https://raw.githubusercontent.com/luna-lnx/repo/main/main/"
 #need to add version nums and reflect in code
 
 [constellations]
-"core" = ["musl", "yash", "kati", "linux", "binutils", "bison", "flex", "openssl", "perl", "pkgconf", "m4", "gperf"]
+"core" = ["musl", "yash", "kati", "linux", "binutils", "bison", "flex", "openssl", "perl", "pkgconf", "m4", "gperf", "autoconf"]
