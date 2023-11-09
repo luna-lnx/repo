@@ -7,7 +7,7 @@ dependencies = [
 ]
 build = [
     "chmod +x ./Configure",
-    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./Configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./Configure -d -Dusedevel -e",
     "make $MKFLAGS"
 ]
 install = [
