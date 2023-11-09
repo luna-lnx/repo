@@ -7,7 +7,7 @@ dependencies = [
 ]
 build = [
     "chmod +x ./configure",
-    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./configure",
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS=$CFLAGS LDFLAGS=$LDFLAGS ./configure --prefix=$DEST/usr --disable-lineedit",
     "make $MKFLAGS"
 ]
 install = [
