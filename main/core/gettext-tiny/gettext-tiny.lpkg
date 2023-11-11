@@ -6,8 +6,8 @@ dependencies = [
     "kati"
 ]
 build = [
-    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS=$CFLAGS LDFLAGS=$LDFLAGS make LIBINTL=NOOP $MKFLAGS"
+    "CC=$CC CXX=$CXX CFLAGS=$CFLAGS CXXFLAGS=$CFLAGS LDFLAGS=$LDFLAGS make LIBINTL=NONE $MKFLAGS"
 ]
 install = [
-    "make LIBINTL=NOOP install DESTDIR=$DEST"
+    "make LIBINTL=NONE install DESTDIR=$DEST"
 ]
